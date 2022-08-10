@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheatSheet</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="prism.js"></script>
+  <link rel="stylesheet" href="prism.css">
+</head>
+
+<body>
+  <nav>
+    <div class="content center">
+      Prem-CheatSheet
+    </div>
+  </nav>
+  <div class="container">
+    <ol>
+      <li>
+        <div class="title"><b>HTML Boilerplate : </b>This is the basic boilerplate of html code </div>
+        <pre class="language-html"><code>
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle&gtDocument&lt/title&
+&lt/head&gt
+&ltbody&gt
+    
+&lt/body&gt
+&lt/html&gt </code></pre>
+      </li>
+
+      <li>
+        <div class="title"><b>Footer HTML: </b> Footer- Prem kumar</div>
+        <pre class="language-html"><code>
+&ltdiv class="footer"&gt
+  &ltspan&gt
+    &#169; copyright 2022 //  #169; use for copyright icon
+  &lt/span&gt
+    &ltdiv&gtDesigned by Prem Kumar&lt/div&gt
+&lt/div&gt</code></pre>
+      </li>
+      <li>
+        <div class="title"><b>Footer CSS : </b> Footer- Prem kumar</div>
+        <pre class="language-html"><code>
+.footer{
+text-align: center;
+background-color:darkgray;
+margin-top: 180px;
+margin-bottom: 0%;
+padding: 20px;
+}</code></pre>
+      </li>
+
+      <li>
+        <div class="title"><b>YouTube Channel: </b>CodeWithPrem- YouTube channel link</div>
+        <pre class="language-html"><code>https://youtube.com/channel/UC_wYsOARGx42Vyn8y60UWDA</code></pre>
+      </li>
+      <li>
+        <div class="title"><b>SideBar HTML: </b>Responsive laptop, tap and phone SideBar </div>
+        <pre class="language-html"><code>
+          &lt!DOCTYPE html&gt
+          &lthtml lang="en"&gt
+          &lthead&gt
+              &ltmeta charset="UTF-8"&gt
+              &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+              &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+              &lttitle&gtSideBar Menu&lt/title&gt
+              &ltlink rel="stylesheet" href="style.css"&gt
+              &ltlink rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"&gt
+          &lt/head&gt
+          &ltbody&gt&ltinput type="checkbox" id="menu"&gt
+              &ltnav&gt
+                  &ltlabel&gtPrem-Protfolio&lt/label&gt
+                  &ltul&gt
+                      &ltli&gt&lta href="#"&gtLogout&lt/a&gt&lt/li&gt
+                  &lt/ul&gt
+                  &ltlabel for="menu" class="menu-bar"&gt
+                      &lti class="fa fa-bars"&gt&lt/i&gt
+                  &lt/label&gt
+              &lt/nav&gt
+              &ltdiv class="side-menu"&gt
+                  &ltcenter&gt
+                      &ltimg src="prem01.jpg" alt="Prem photo"&gt
+                      &ltbr&gt&ltbr&gt
+                      &lth2&gtPrem Kumar&lt/h2&gt
+                  &lt/center&gt
+                  &ltbr&gt
+                  &lta href="#"&gt&lti class="fa fa-user"&gt&lt/i&gt&ltspan&gtCustomers&lt/span&gt&lt/a&gt
+                  &lta href="#"&gt&lti class="fa fa-envelope"&gt&lt/i&gt&ltspan&gtMessage&lt/span&gt&lt/a&gt
+                  &lta href="#"&gt&lti class="fa fa-shopping-basket"&gt&lt/i&gt&ltspan&gtProducts&lt/span&gt&lt/a&gt
+                  &lta href="#"&gt&lti class="fa fa-sellsy"&gt&lt/i&gt&ltspan&gtStatistics&lt/span&gt&lt/a&gt
+                  &lta href="#"&gt&lti class="fa fa-ban"&gt&lt/i&gt&ltspan&gtBan Customers&lt/span&gt&lt/a&gt
+                  &lta href="#"&gt&lti class="fa fa-cog"&gt&lt/i&gt&ltspan&gtSetting&lt/span&gt&lt/a&gt
+          
+                  &lta href="#" class="Logout"&gt&ltspan&gtLogout&lt/span&gt&lt/a&gt
+                  
+              &lt/div&gt
+              &ltdiv class="main"&gt
+                  
+              &lt/div&gt
+              
+          &lt/body&gt
+          &lt/html&gt
+        </code></pre>
+      </li>
+      <li>
+        <div class="title"><b>SideBar CSS: </b>Responsive laptop, tap and phone SideBar</div>
+        <pre class="language-html"><code>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+          * {
+              padding: 0;
+              margin: 0;
+              text-decoration: none;
+              list-style: none;
+              box-sizing: border-box;
+          }          
+          body {
+              font-family: 'Poppins', sans-serif;
+          }          
+          .main {
+              background: darkslategrey;
+              height: 100vh;
+              margin-left: 250px;
+              background-size: cover;
+              background-repeat: no-repeat;
+          }          
+          nav {
+              background: #1D2951;
+              line-height: 80px;
+              position: fixed;
+              width: 100%;
+          }          
+          label {
+              line-height: 80px;
+              font-size: 30px;
+              color: white;
+              font-weight: 200;
+              margin-left: 50px;
+              cursor: pointer;
+          }          
+          nav ul {
+              float: right;
+              margin-right: 20px;
+          }          
+          nav ul li {
+              line-height: 80px;
+              margin: 0 10px;
+          }          
+          nav ul li a {
+              color: white;
+              font-size: 20px;
+              padding: 6px 15px;
+              font-weight: 600;
+              background-color: rgb(55, 34, 246);
+              border-radius: 3px;
+          }          
+          nav ul li a:hover {
+              background-color: rgb(49, 27, 214);
+              color: white;
+              transition: 0.5s;
+          }          
+          .side-menu {
+              position: fixed;
+              background: #1D2951;
+              width: 250px;
+              height: 100%;
+              margin-top: 80px;
+          }          
+          .side-menu center img {
+              height: 120px;
+              width: 120px;
+              border-radius: 50%;
+              margin-top: 30px;
+              border: 3px solid white;
+          }          
+          .side-menu center h2 {
+              color: white;
+          }          
+          .side-menu a {
+              display: block;
+              line-height: 60px;
+              transition: 0.5s;
+          }          
+          .side-menu a:hover {
+              background: rgb(20, 54, 165);
+              padding-left: 20px;
+          }          
+          .side-menu span {
+              font-size: 20px;
+              margin-left: 10px;
+              color: white;
+          }          
+          .side-menu i {
+              font-size: 20px;
+              margin-left: 20px;
+              color: white;
+          }          
+          nav .menu-bar {
+              float: right;
+              margin-top: 20px;
+              display: none;
+              margin-right: 20px;
+          }          
+          #menu {
+              display: none;
+          }          
+          .side-menu .Logout {
+              display: none;
+          }          
+          @media (max-width:850px) {
+              .side-menu a span {
+                  display: none;
+              }          
+              .side-menu center {
+                  display: none;
+              }          
+              .side-menu {
+                  width: 100px;
+              }          
+              .side-menu a i {
+                  display: block;
+                  line-height: 80px;
+                  text-align: center;
+                  margin-left: 0;
+                  font-size: 35px;
+              }          
+              .main {
+                  margin-left: 100px;
+              }
+          }          
+          @media (max-width:650px) {
+              .main {
+                  margin-left:0px;
+              }          
+              nav ul {
+                  display: none;
+              }          
+              .side-menu {
+                  width: 100%;
+                  text-align: center;
+                  left: 100%;
+                  background-color: #4c516d;
+                  transition: all 0.5s;
+              }          
+              .side-menu a i {
+                  display: none;
+              }          
+              .side-menu a span {
+                  display: block;
+              }          
+              .side-menu .Logout {
+                  display: block;
+              }          
+              nav .menu-bar {
+                  display: block;
+              }
+          }
+          
+          #menu:checked~.side-menu {
+              left: 0;
+          }
+        </code></pre>
+      </li>
+      <li>
+        <div class="title"><b>Title: </b>Discription </div>
+        <pre class="language-html"><code>code here</code></pre>
+      </li>
+      <li>
+        <div class="title"><b>Title: </b>Discription </div>
+        <pre class="language-html"><code>code here</code></pre>
+      </li>
+      <li>
+        <div class="title"><b>Title: </b>Discription </div>
+        <pre class="language-html"><code>code here</code></pre>
+      </li>
+      <li>
+        <div class="title"><b>Title: </b>Discription </div>
+        <pre class="language-html"><code>code here</code></pre>
+      </li>
+    </ol>
+  </div>
+</body>
+
+</html>
